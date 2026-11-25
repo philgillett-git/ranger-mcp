@@ -1,0 +1,18 @@
+# @ranger/mcp-server npm publish allowlist policy.
+#
+# We use package.json's "files" allowlist as the authoritative control over
+# what ships to npm (currently: dist, README.md, LICENSE). This .npmignore
+# is defence-in-depth: anything that slipped past the allowlist via an
+# upstream npm rule change is caught here.
+#
+# Keep ignored:
+src/
+scripts/
+node_modules/
+__tests__/
+tsconfig.json
+*.log
+.DS_Store
+.env
+.env.*
+coverage/
